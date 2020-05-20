@@ -10,18 +10,23 @@ body {
   padding: 2%;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: 700;
+.content {
   margin: 0;
   text-align: left;
 }
 
-h3 {
+.content h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.content h3 {
   font-size: 1.5em;
   font-weight: 100;
-  margin: 0;
-  text-align: left;
+}
+
+h1 + h3 {
+  margin-top: 4px;
 }
 
 .location:hover {
@@ -34,14 +39,19 @@ h3 {
   color: black;
   box-sizing: border-box;
   float: left;
-  margin: 1%;
-  padding: 3%;
+  margin: 1px;
+  padding: 20px;
   width: 415px;
 }
 
 .container {
   margin: 0 auto;
   width: 420px;
+}
+
+.arrow {
+  float:right;
+  align-items: center;
 }
 
 nav {
